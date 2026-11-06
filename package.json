@@ -1,0 +1,14 @@
+{
+  "name": "sdms",
+  "private": true,
+  "version": "0.3.0",
+  "description": "School Periodic Report Card Management System",
+  "scripts": {
+    "dev:web": "npm --prefix apps/web run dev",
+    "build:web": "npm --prefix apps/web run build",
+    "lint:web": "npm --prefix apps/web run lint",
+    "test:api": "cd apps/api && pytest -q",
+    "db:migrate": "cd apps/api && .venv/Scripts/python ../../scripts/apply_migrations.py",
+    "db:verify": "cd apps/api && .venv/Scripts/python ../../scripts/verify_phase2.py"
+  }
+}
